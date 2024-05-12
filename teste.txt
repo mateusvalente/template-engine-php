@@ -1,0 +1,12 @@
+<h3>
+    {=$teste}
+    <if condition="$teste == 6"> Show4 <if/>
+</h3>
+
+<h3>
+    teste2
+    <if condition="$teste == 2"> Show42  <if condition="$teste == 3"> Show4 <if/> <if/>
+</h3>
+
+
+<foreach data="$people:$p"> {=$p} <foreach data="$carro:$c"> {=$c} </br> <endEach/> </br></br> <endEach/>

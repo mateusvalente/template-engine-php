@@ -1,0 +1,33 @@
+<h3>
+    {=$teste}
+    <if condition="[$teste == 2]"> <h3 style="background-color: red; padding: 2px;"> teste </h3> </if>
+</h3>
+
+
+<showIf condition="[$soma == 7 || $soma == 6]">
+    <h3 style="background-color: blue; padding: 2px;"> teste </h3>  
+</showIf>
+
+<showIf condition="[$soma == 9 || $soma == 10]">
+    <h3>Show IF 9 ou 10funciona</h3>
+</showIf>
+
+
+<h3>
+     <if condition="[$teste == 2]"> 
+        <label>{=$nome}</label><input type="password"/>  
+        <if condition="[$teste == 3]"> 
+            Show4 
+        </if> 
+    </if>
+</h3>
+
+
+<foreach data="$people:$p"> 
+    {=$p} 
+    <foreach data="$carro:$c"> 
+        {=$c} </br> 
+    </endEach> 
+    </br>
+    </br> 
+</endEach>
